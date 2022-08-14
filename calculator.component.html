@@ -1,0 +1,48 @@
+  <div class="card">
+    <div class="box">
+
+      <div class="display-screen">
+        <div class="screen">
+          <input type="text" [(ngModel)]="inputValue" class="screen-input" placeholder="0">
+        </div>
+      </div>
+      
+      <div class="numbres">
+        <div class="first-buttons-actions">
+          <button class="btn bg-gray" (click)="clearAll()">AC</button>
+          <button class="btn bg-gray" >C</button>
+          <button class="btn bg-gray" >%</button>
+          <button class="btn-action">/</button>
+        </div>
+
+        <div class="second-buttons">
+          <button class="btn" (click)="writeInput('7')">7</button>
+          <button class="btn" (click)="writeInput('8')">8</button>
+          <button class="btn" (click)="writeInput('9')">9</button>
+          <button class="btn-action">x</button>
+        </div>
+
+        <div class="third-buttons">
+          <button class="btn" (click)="writeInput('4')">4</button>
+          <button class="btn" (click)="writeInput('5')">5</button>
+          <button class="btn" (click)="writeInput('6')">6</button>
+          <button class="btn-action" (click)="action('-')">-</button>
+        </div>
+
+        <div class="fourth-buttons">
+          <button class="btn" (click)="writeInput('1')">1</button>
+          <button class="btn" (click)="writeInput('2')">2</button>
+          <button class="btn" (click)="writeInput('3')">3</button>
+          <button class="btn-action" (click)="action('+')">+</button>
+        </div>
+
+        <div class="fifth-butttons">
+          <button class="btn-child-active" (click)="writeInput('0')">0</button>
+          <button class="btn">,</button>
+          <button class="btn-action" type="submit" (click)="action('=')">=</button>
+        </div>
+      </div>
+
+    </div>  
+  </div>
+
